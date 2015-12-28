@@ -11,7 +11,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -43,10 +46,10 @@
 										<li>
 											<a href="#">Neural Engineering &hellip;</a>
 											<ul>
-												<li><a href="#">Viral Constructs</a></li>
-												<li><a href="#">FreedomScope Project</a></li>
-												<li><a href="#">Coherent fiber-based miccroscpes</a></li>
-												<li><a href="#">Splaying Carbon Fiber Electrodes</a></li>
+												<li><a href="projects.html">Viral Constructs</a></li>
+												<li><a href="projects.html">FreedomScope Project</a></li>
+												<li><a href="projects.html">Coherent fiber-based miccroscpes</a></li>
+												<li><a href="projects.html">Splaying Carbon Fiber Electrodes</a></li>
 											</ul>
 										<li>
 											<a href="#">Sensory-Motor Research &hellip;</a>
@@ -58,7 +61,7 @@
 										</li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">About</a></li>
+								<li><a href="about-me.html">About</a></li>
 								<li><a href="http://github.com/waliii">GitHub</a></li>
 								<li><a href="WALIII_cv.pdf">CV</a></li>
 							</ul>
@@ -82,9 +85,11 @@
 
 			<!-- Carousel -->
 				<section class="carousel">
+
 					<div class="reel">
 
 						<article>
+
 							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 							<header>
 								<h3><a href="#">Population Recording</a></h3>
@@ -109,7 +114,7 @@
 						</article>
 
 						<article>
-							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+							<button type="button" class="image featured"><img src="images/pic04.jpg" alt="" data-toggle="modal" data-target="#myModal"></button>
 							<header>
 								<h3><a href="#">Memory Maintenence</a></h3>
 							</header>
@@ -123,6 +128,8 @@
 							</header>
 							<p>No good science happens in isolation- sharing ideas and progress makes science more efficent and fun</p>
 						</article>
+
+
 			<!--
 						<article>
 							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
@@ -167,7 +174,32 @@
 						-->
 
 					</div>
+
+					<!-- Modal -->
+				  <div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">
+
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">Modal Header</h4>
+				        </div>
+				        <div class="modal-body">
+
+				          <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+				          <p>Some text in the modal.</p>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div> </div> </div> </div>
+
+
+
+
 				</section>
+
+
 
 			<!-- Main -->
 				<div class="wrapper style2">
