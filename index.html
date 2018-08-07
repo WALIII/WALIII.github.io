@@ -3,7 +3,8 @@
 	WALIII personal Website
 	based on Helios: html5up.net | @n33co
 	created: 12.27.15
-	updated: 07.31.17
+	updated: 02.25.18
+
 -->
 <html>
 	<head>
@@ -51,19 +52,19 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li>
+								<!-- <li>
 									<a href="#">Research Projects</a>
 									<ul>
 										<li><a href="Multiphoton.html">Multiphoton Imaging</a></li>
 										<li>
 											<a href="projects-engineering.html">Neural Engineering &hellip;</a>
-											<ul>
-												<li><a href="projects-engineering.html#banner1">Viral Constructs</a></li>
+											<!-- <ul> -->
+												<!-- <li><a href="projects-engineering.html#banner1">Viral Constructs</a></li>
 												<li><a href="projects-engineering.html#banner2">FreedomScope Project</a></li>
 												<li><a href="projects-engineering.html#banner3">Coherent fiber-based miccroscpes</a></li>
 												<li><a href="projects-engineering.html#banner3">Splaying Carbon Fiber Electrodes</a></li>
-											</ul>
-										<li>
+											</ul> -->
+										<!-- <li>
 											<a href="#">Sensory-Motor Research &hellip;</a>
 											<ul>
 												<li><a href="#">Motor Stability</a></li>
@@ -72,7 +73,9 @@
 											</ul>
 										</li>
 									</ul>
-								</li>
+								</li> -->
+								<li><a href="#carousel">Research Projects</a></li>
+
 								<li><a href="https://scholar.google.com/citations?user=7Ei3pRkAAAAJ&hl=en">Publications</a></li>
 								<li><a href="http://github.com/waliii">Software</a></li>
 								<li><a href="WALIII_cv.pdf">CV</a></li>
@@ -84,32 +87,32 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h3>Hi. I'm a Postdoc in the lab of <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/carmena.html">Jose Carmena </a>, at <strong>UC Berkeley </strong>. I recieved my Ph.D. at <strong>Boston University's </strong>  <a href="http://www.bu.edu/neuro/graduate/">Graduate Program in Neuroscience</a>, working with <a href="http://people.bu.edu/timothyg/Home.html"> Tim Gardner </a>
-							who is now chief scientist at  <a href="https://www.neuralink.com"> Neuralink</a>, developing ultra high bandwidth brain-machine interfaces to connect humans and computers. </h3>
+						<h3>Hi. I'm a Postdoctral Fellow in the lab of <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/carmena.html">Jose Carmena </a>, at <strong>UC Berkeley </strong>. I recieved my Ph.D. at <strong>Boston University's </strong>  <a href="http://www.bu.edu/neuro/graduate/">Graduate Program in Neuroscience</a>, working with <a href="http://people.bu.edu/timothyg/Home.html"> Tim Gardner </a>
+							who is a founder and lead scientist at  <a href="https://www.neuralink.com"> Neuralink</a>, developing ultra high bandwidth brain-machine interfaces to connect humans and computers. </h3>
 						<p>
 							This webpage details some of the experiments and projects
-							than I'm working on. Broadly, my intrests include: neurophotonics, memory encoding,
-							biological basis of computation, open-source science, building things, trying
-							to program, eating good food and drinking bad coffee.
+							than I'm working on. Broadly, my intrests include: brain-machine interfacing, neurophotonics, memory encoding,
+							biological basis of computation, open-source science, building things, eating good food and drinking bad coffee.
 						</p>
 					</header>
 				</section>
 
 			<!-- Carousel -->
+			<section id = "carousel">
 				<section class="carousel">
 
 					<div class="reel">
 
 						<article>
-							<a href="projects-engineering.html#banner1" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<button type="button" class="image featured"><img src="images/pic02.jpg" alt="" data-toggle="modal" data-target="#myModal1"></button>
 							<header>
 								<h3><a href="#">Neurophotonics tool development</a></h3>
 							</header>
-							<p>Building and creating tools to optically record large populations of cells, durring naturalistic behaviors.</p>
+							<p>Building and creating tools to optically record large populations of cells, durring naturalistic and neuroprosthetic behaviors.</p>
 						</article>
 
 						<article>
-							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+							<button type="button" class="image featured"><img src="images/pic03.jpg" alt="" data-toggle="modal" data-target="#myModal2"></button>
 							<header>
 								<h3><a href="#">Motor Stability</a></h3>
 							</header>
@@ -117,15 +120,15 @@
 						</article>
 
 						<article>
-							<button type="button" class="image featured"><img src="images/pic04.jpg" alt="" data-toggle="modal" data-target="#myModal"></button>
+							<button type="button" class="image featured"><img src="images/pic04.jpg" alt="" data-toggle="modal" data-target="#myModal3"></button>
 							<header>
-								<h3><a href="#">Memory Maintenence</a></h3>
+								<h3><a href="#">Neuroprosthetic Learning</a></h3>
 							</header>
-							<p> What forms the basis of memory stability over time?</p>
+							<p> What it the fundimental circuit archetecture of memories and actions?</p>
 						</article>
 
 						<article>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<a href="https://github.com/WALIII/" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
 							<header>
 								<h3><a href="#">Open Source Science</a></h3>
 							</header>
@@ -159,28 +162,114 @@
 
 					</div>
 
-					<!-- Modal -->
-				  <div class="modal fade" id="myModal" role="dialog">
-				    <div class="modal-dialog">
-
-				      <!-- Modal content-->
-				      <div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">Modal Header</h4>
-				        </div>
-				        <div class="modal-body">
-
-				          <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-				          <p>Some text in the modal.</p>
-				        </div>
-				        <div class="modal-footer">
-				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        </div> </div> </div> </div>
 
 
+								<!-- Modal 01 -->
+								<div class="modal fade" id="myModal1" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<!-- <div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Modal Header</h4>
+											</div> -->
+											<div class="modal-body">
+
+													<br>
+													<div id="myCarousel" class="carousel slide" data-ride="carousel">
+														<!-- Indicators -->
+														<ol class="carousel-indicators">
+															<li data-target="#myCarousel" data-slide-to="0"></li>
+															<li data-target="#myCarousel" data-slide-to="1"></li>
+															<li data-target="#myCarousel" data-slide-to="2"></li>
+															<li data-target="#myCarousel" data-slide-to="3"></li>
+														</ol>
+
+														<!-- Wrapper for slides -->
+														<div class="carousel-inner" role="listbox">
+
+															<div class="item active">
+																<img src="images/pic02.jpg" alt="Chania" width="9000" height="8000">
+																<div class="carousel-caption">
+																	<p>Design of miniature microscopes, with lenses inset.</p>
+																</div>
+															</div>
+
+															<div class="item">
+																<img src="images/pic11.jpg" alt="Chania" width="9000" height="8000">
+																<div class="carousel-caption">
+																	<p></p>
+																</div>
+															</div>
+
+															<div class="item">
+																<img src="images/pic31.jpg" alt="Flower" width="9000" height="8000">
+																<div class="carousel-caption">
+																	<p>These microscopes are wireless capeable, although the extra weight of the transmitter and battery makes them to heavy for finches</p>
+																</div>
+															</div>
 
 
+															<div class="item">
+																<img src="images/pic32.jpg" alt="Chania" width="900" height="800">
+																<div class="carousel-caption">
+																	<p>Size of assembled scope, next to a penny.</p>
+																</div> </div> </div> </div>
+													<!-- Left and right controls -->
+													<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+														<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+														<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div> </div> </div> </div>
+
+
+												<!-- Modal 02 -->
+												<div class="modal fade" id="myModal2" role="dialog">
+													<div class="modal-dialog">
+
+														<!-- Modal content-->
+														<div class="modal-content">
+															<!-- <div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal">&times;</button>
+																<h4 class="modal-title">Modal Header</h4>
+															</div> -->
+															<div class="modal-body">
+
+																	<br>
+																	<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+																		<!-- Indicators -->
+																		<ol class="carousel-indicators">
+																			<li data-target="#myCarousel2" data-slide-to="0"></li>
+																			<li data-target="#myCarousel2" data-slide-to="1"></li>
+																			<li data-target="#myCarousel2" data-slide-to="2"></li>
+																			<li data-target="#myCarousel2" data-slide-to="3"></li>
+																		</ol>
+
+																		<!-- Wrapper for slides -->
+																		<div class="carousel-inner" role="listbox">
+
+																			<div class="item active">
+																			<iframe width="540" height="380" src="https://www.youtube.com/embed/kpqDwrYrlbY">
+																			</iframe>
+																			<div class="carousel-caption">
+																				<p>Design of miniature microscopes, with lenses inset.</p>
+																			</div>
+																		</div>
+
+
+																	</div> </div>
+																	<!-- Left and right controls -->
+
+																</div> </div> </div> </div>
+
+
+
+				</section>
 				</section>
 
 
@@ -189,17 +278,17 @@
 				<div class="wrapper style2">
 
 					<article id="main" class="container special">
-						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+						<a href="#" class="image featured"><img src="images/GIF_01.gif" alt="" /></a>
 						<header>
 							<h2><a href="#">What keeps us ticking?</a></h2>
 							<p>
-								What forms the basis of memory stability? How do cells in the brain self-organize to retain information,
+								What forms the basis of learned skills? How do cells in the brain self-organize to retain information,
 								and how is this information properly maintined?
 							</p>
 						</header>
 						<p>
 							Nearly all living creatures maintain learned motor skills over long time-scales–for days, years or even decades.
-							However, little is known about the mechanistic basis skill learning and maintnence .
+							However, little is known about the mechanistic basis skill learning and maintnence.
 							</p>
 
 							<p>I develop tools for longitudinally monitoring and manipulating large populations of cells in awake freely behaving animals,
@@ -207,21 +296,30 @@
 							the face of rapidly fluctuating internal and external conditions. I hope to discover single neuron rules that underlie sensory-motor
 							learning and memory stability. </p>
 
-							<p>In the Gardner Lab, I designed neural interfaces to ask questions in one of the most stable of all animal behaviors: birdsong. The neural
+							<p>In my graduate work in the Gardner Lab, I designed neural interfaces to ask questions in one of the most stable of all animal behaviors: birdsong. The neural
 							circuits that underly song behavior are well defined, extensively studied, and in key respects homologous to the
 							cortico-basal ganglia circuits underlying sensory-motor learning in mammals. For this work, the key value of
 							the songbird is the stability of its natural motor behavior. A songbird can sing the same learned song with great
 							precision for years.  My findings revealed that the learned behaviors can be encoded on two distinct levels-
-							 a mesoscopic level that is highly stable, and a microscopic level in which single neurons change their activity, influenced
+							 a mesoscopic level that is both locally organized and highly stable, and a microscopic level in which single neurons change their activity, influenced
 							by the recent history of reward. These changes are integrated offline durring periods of sleep.
 						  </p>
+
+							<p>As a postdoctoral fellow in the Carmena Lab, I'm developing experiments using calcium imaging based Brain Machine Interfaces (BMIs). I'm using a reductionist approach
+								where behavioral output is simply a specific spatiotemporal activity pattern produced in experimenter defined neurons.
+								To precisely constrain neural activity, I exploit a neuron-centric framework in which the relevant output neurons and rewarded activity patterns are
+								 defined a priori. This approach is ideal because it reduces the redundancy and degeneracy that is broadly found
+								 in motor behavior, and it can explicitly constrain both the intrinsic jitter in motor production and the potential
+								 variability of performance evaluation. These BMI techniques leverage the latest advances in molecular and optical
+								 engineering to provide unprecedented access to large populations of genetically identified neurons across timescales relevant to learning.
+								 </p>
 
 
 
 
 
 						<footer>
-							<a href="#" class="button">Continue Reading</a>
+							<a href="projects-engineering.html#banner1" class="button">Continue Reading</a>
 						</footer>
 					</article>
 
@@ -233,7 +331,7 @@
 					<section id="features" class="container special">
 						<header>
 							<h2>Current Projects</h2>
-							<p>These are the project's I'm actively working on.</p>
+							<p>These are the projects I'm actively working on.</p>
 						</header>
 						<div class="row">
 							<article class="4u 12u(mobile) special">
@@ -243,13 +341,17 @@
 								</header>
 								<p>
 									Memories and motor skills can be maintained for decades, but the biological basis of memory persistence remains largely unknown.
-									The zebra finch, for example, sings a highly stereotyped song that is stable for years, but the underlying neural activity has
-									not been observed for more than a single day. Using Calcium imagign, I'm trying to uncover the mechanisms of memory persistacne
-									by observing how individual neurons respond to percieved performance errors.
+									 it is clear that significant homeostatic events act across days to fine tune and stabilize behavioral output, but it remains
+									 unclear how these continual changes assist in acquiring and maintaining learned skills. How might continually dynamic circuitry
+									 impart both skill robustness and flexibility throughout life? I'm using a BMI framework to answer long standing questions about
+									 the nature of memory formation and stability for neural skills on two scales: the local cortical microcircuit and of the anatomically
+									 distributed cortical network to define the single-unit plasticity mechanisms that result in the balance of both the rapid acquisition
+									 and long-term stability of learned skills.
+
 								</p>
 							</article>
 							<article class="4u 12u(mobile) special">
-								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/pic38_2.jpg" alt="" /></a>
 								<header>
 									<h3><a href="#">Engineering new tools for optical recording and stimulation </a></h3>
 								</header>
@@ -261,13 +363,16 @@
 								</p>
 							</article>
 							<article class="4u 12u(mobile) special">
-								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/pic63.png" alt="" /></a>
 								<header>
-									<h3><a href="#">Motor Learning</a></h3>
+									<h3><a href="#">Neuroprosthetic Learning</a></h3>
 								</header>
 								<p>
 									How do individual neruons self-assemble into netowrks that are capeable of complex computations? What are the fundimental features of
-									these networks?
+									these networks?  To address this, I'm developing all optical, closed-loop operant conditioning paradigms that enable
+									an explicit, arbitrary mapping between neuronal activity, behavioral output, and reward, to provide a powerful approach for studying
+									sensorimotor learning,
+
 								</p>
 							</article>
 						</div>
@@ -416,6 +521,7 @@
 												<li><a href="#" class="icon fa-rebel"><span class="label">StarWars</span></a></li>
 												<li><a href="https://scholar.google.com/citations?user=7Ei3pRkAAAAJ&hl=en" class="icon fa-file"><span class="label">Google Scholar</span></a></li>
 												<li><a href="https://www.linkedin.com/in/william-liberti-812521145/" class="icon fa-linkedin"><span class="label">Google Scholar</span></a></li>
+												<li><a href="https://twitter.com/WillLiberti" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 
 
 											</ul>

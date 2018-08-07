@@ -2430,6 +2430,13 @@
 		margin-bottom: 0;
 	}
 
+	.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+		color: black;
+}
+
 		.carousel .forward, .carousel .backward {
 			position: absolute;
 			top: 50%;
